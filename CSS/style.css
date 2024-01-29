@@ -1,11 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
-html {
-    font-size: 16px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
+p {
+  margin: 0;
+  letter-spacing: 0.4px;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.title__heading {
+  text-align: center;
+}
+.title__heading h3 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  position: relative;
+}
+
+.title__heading span {
+  color: #ff6e65;
+}
+.title__heading h3::before {
+  left: -20px;
+  bottom: -8px;
+}
+.title__heading h3::after {
+  left: 20px;
+  bottom: -15px;
+}
+.title__heading h3::before,
+.title__heading h3::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  background-color: #707070;
+  margin: 0 auto;
+  right: 0;
+}
+
+/* start__service  */
+.service {
+  background: url(https://wp.w3layouts.com/studious/wp-content/themes/studious/assets/images/bg3.jpg)
+    no-repeat bottom / cover;
+}
+
+.service__inner {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.service__icon {
+  padding-right: 20px;
+}
+.service__icon i {
+  color: #0d369f;
+  font-size: 28px;
+  background: rgb(13 54 159 / 9%);
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.service__text {
+  padding-right: 10px;
+}
+
+/* end service  */
+
+/* start number  */
+
+.number__item p {
+  font-size: 46px;
+  font-weight: 600;
+  color: #060606;
+}
+@media screen and (max-width: 991px) {
+  .number__item p {
+    font-size: 35px;
+  }
+}
+
+.number__list .number__item {
+  border-right: 1px solid #000;
+}
+.number__list .number__item:last-child {
+  border-right: none;
+}
+@media screen and (max-width: 991px) {
+  .number__list .number__item {
+    border-right: none;
+  }
 }

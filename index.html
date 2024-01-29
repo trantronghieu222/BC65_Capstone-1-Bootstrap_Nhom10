@@ -51,10 +51,95 @@
     <section class="welcome"></section>
 
     <!-- Service -->
-    <section class="service"></section>
+    <br /><br /><br /><br /><br />
+    <section class="service">
+      <div class="container py-md-5 py-4">
+        <div class="service__grid row">
+          <div class="col-xl-4"></div>
+          <div class="col-xl-8">
+            <div class="row">
+              <div class="service__item col-12 col-md-6">
+                <div class="service__inner d-flex align-items-center">
+                  <div class="service__icon">
+                    <i class="fa fa-american-sign-language-interpreting"></i>
+                  </div>
+                  <div class="service__text">
+                    <h4>Flexible Classes</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="service__item col-12 col-md-6 mt-4 mt-md-0">
+                <div class="service__inner d-flex align-items-center">
+                  <div class="service__icon">
+                    <i class="fa fa-download"></i>
+                  </div>
+                  <div class="service__text">
+                    <h4>Offline Mode</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="service__item col-12 col-md-6 pt-md-4 mt-4">
+                <div class="service__inner d-flex align-items-center">
+                  <div class="service__icon">
+                    <i class="fa fa-headphones"></i>
+                  </div>
+                  <div class="service__text">
+                    <h4>Educator Help</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="service__item col-12 col-md-6 pt-md-4 mt-4">
+                <div class="service__inner d-flex align-items-center">
+                  <div class="service__icon">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
+                  <div class="service__text">
+                    <h4>Online Classes</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- NumberCounter -->
-    <section class="number"></section>
+    <section class="number pt-5 py-sm-5 pt-sm-0">
+      <div class="container">
+        <div class="title__heading">
+          <h3>Strength in <span>Numbers</span></h3>
+        </div>
+        <p class="my-5 text-center">
+          Similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga.
+        </p>
+        <div class="number__list">
+          <div class="row text-center justify-content-center">
+            <div class="number__item col-12 col-sm-6 col-lg-3">
+              <p class="counter">6,300</p>
+              <span>LEARNERS & COUNTING </span>
+            </div>
+            <div class="number__item col-12 col-sm-6 col-lg-3">
+              <p class="counter">638</p>
+              <span>TOTAL COURSES </span>
+            </div>
+            <div class="number__item col-12 col-sm-6 col-lg-3">
+              <p class="counter">7,600</p>
+              <span>SUCCESSFUL STUDENTS </span>
+            </div>
+            <div class="number__item col-12 col-sm-6 col-lg-3">
+              <p class="counter">36</p>
+              <span>LANGUAGES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Feedback -->
     <section class="feedback"></section>
@@ -70,11 +155,23 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Jquery  -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <!-- CountUp  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/countup/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
