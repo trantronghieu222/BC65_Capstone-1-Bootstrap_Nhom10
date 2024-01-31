@@ -20,6 +20,20 @@
       rel="stylesheet"
     />
 
+    <!-- Icon gg -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/sun.css"
+      rel="stylesheet"
+    />
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="./CSS/Slick/slick.css" />
+    <link rel="stylesheet" href="./CSS/Slick/slick-theme.css" />
+
     <!-- Font Awe-some -->
     <link
       rel="stylesheet"
@@ -37,13 +51,166 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
-  <body>
-    <!-- Header -->
-    <header class="stuHeader"></header>
+  <body id="myBody">
+    <header class="stuHeader">
+      <div class="header__top">
+        <div class="container-fluid d-flex justify-content-between">
+          <div class="header__contact">
+            <ul class="d-flex">
+              <li><a href="#">Have any question ?</a></li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:mail@example.com">mail@example.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__social">
+            <ul class="d-flex">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__main container-fluid" id="header__main">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <img src="./image/logo.png" alt="" />
+            <span class="ml-1">Studious</span>
+          </a>
+          <div class="d-flex align-items-center">
+            <div
+              class="darkNight darkNight__first mx-3"
+              id="darkNight"
+              onclick="handleDarkNight()"
+            >
+              <i class="gg-moon"></i>
+              <i class="gg-sun"></i>
+            </div>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="handleClickBar()"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  ><span>HOME</span> <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span>ABOUT US</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>PAGES</span>
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">BLOG POST</a>
+                  <a class="dropdown-item" href="#">404 PAGE</a>
+                  <a class="dropdown-item" href="#">LANDING PAGE</a>
+                  <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span>CONTACT</span></a>
+              </li>
+            </ul>
+            <div class="navbar-formSearch my-2">
+              <form class="form-inline  my-lg-0">
+                <input
+                  class="inputSearch"
+                  type="search"
+                  placeholder="Enter Keywork"
+                  aria-label="Search"
+                />
+                <button class="btn btn-search" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div
+            class="darkNight darkNight__second"
+            id="darkNight"
+            onclick="handleDarkNight()"
+          >
+            <i class="gg-moon"></i>
+            <i class="gg-sun"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <!-- Carousel -->
-    <section class="stuCarousel"></section>
-
+    <section class="stuCarousel">
+      <div id="carouselExampleCaptions" class="carousel slide" >
+        <div class="carousel-inner">
+          <div class="carousel-item active banner__change">
+            <img src="./image/banner2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel__caption">
+              <div class="container">
+                <div class="carousel__text">
+                  <h5>Master the Skills to Drive your Career</h5>
+                  <button class="btn">
+                    Know More <i class="fa fa-arrow-right ml-2"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/banner3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel__caption">
+              <div class="container">
+                <div class="carousel__text">
+                  <h5>Studious is the best choice for everyone</h5>
+                  <button class="btn">
+                    Know More <i class="fa fa-arrow-right ml-2"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Feature -->
     <section class="feature"></section>
 
@@ -182,5 +349,20 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Slick Js -->
+    <script src="./JS/Slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").slick({
+          infinite: true,
+          prevArrow : false,
+          nextArrow : false,
+          autoplay: true,
+          dots: true,
+        });
+      });
+    </script>
+    <!-- Script JS -->
+    <script src="./JS/script.js"></script>
   </body>
 </html>
