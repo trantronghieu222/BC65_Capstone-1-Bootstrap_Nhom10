@@ -301,6 +301,25 @@ li.nav-item.active a {
 }
 
 /* Reponsive Header */
+@media (max-width: 575.98px) {
+  .header__main .navbar-brand {
+    margin-right: 0;
+  }
+
+  .header__main .navbar-brand span {
+    font-size: 1.5rem;
+  }
+
+  .header__main .navbar-brand img {
+    height: 38px;
+    width: 38px;
+  }
+
+  .header__main.nav-fixed nav {
+    padding: 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   .header__top {
     display: none;
@@ -988,9 +1007,13 @@ li.nav-item.active a {
 /* end instructor  */
 
 /* start contact  */
+.contact__left img {
+  width: 100%;
+}
+
 .contact__content h2 {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 45px;
   padding-bottom: 10px;
 }
@@ -1039,6 +1062,13 @@ li.nav-item.active a {
   box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
 }
 
+@media screen and (max-width: 575px) {
+  .footer__top {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer__top {
     margin: 0 10px;
@@ -1057,8 +1087,20 @@ li.nav-item.active a {
   font-weight: 600;
 }
 
+@media screen and (max-width: 480px) {
+  .footer__text h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__text h3 {
+    font-size: 26px;
+  }
+}
+
 .footer__form form {
-  box-shadow: 0 0 60px 0 rgb(0, 0, 0, 0.1);
+  display: flex;
 }
 
 .footer__form input {
@@ -1091,6 +1133,34 @@ li.nav-item.active a {
 @media screen and (max-width: 914px) {
   .footer__list {
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer__form form {
+    display: block;
+  }
+
+  .footer__form input {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .footer__form button {
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  .footer__list{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__list {
+    margin-top: 120px;
   }
 }
 
@@ -1127,7 +1197,8 @@ li.nav-item.active a {
   .row .footer__item:nth-child(4) {
     padding-left: 48px;
   }
-  .row .footer__item:nth-child(4){
+
+  .row .footer__item:nth-child(4) {
     border-left: 1px solid rgb(64 73 82 / 51%);
   }
 }
