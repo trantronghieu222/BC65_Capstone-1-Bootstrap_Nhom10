@@ -1081,6 +1081,9 @@ li.nav-item.active a {
   .footer__top {
     margin: 0 10px;
   }
+  .footer__bg{
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
